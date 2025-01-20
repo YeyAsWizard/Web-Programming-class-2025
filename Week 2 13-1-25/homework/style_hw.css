@@ -1,0 +1,61 @@
+html,
+body,
+h1 {
+  margin: 0px;
+  color: red;
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bigerText {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+h3{
+    color:rgb(255, 124, 124);
+}
+
+.boldTxt{
+    font-weight: bolder;
+}
+
+
+.bigTxt {
+  font-size: 30px;
+}
+span {
+  font-weight: 700;
+}
+.redTxt{
+  color:red;
+}
+
+.container {
+  margin: 200px;
+  color: black;
+}
+
+div {
+  line-height: 2rem;
+}
+
+h4,
+p {
+  margin: 5px;
+}
+
+section {
+  border: 2px solid rgb(187, 0, 0);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: rgb(253, 149, 149);
+}
+
+.jersey-15-regular {
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+}
