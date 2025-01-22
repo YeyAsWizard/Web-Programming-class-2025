@@ -1,3 +1,27 @@
+/* external css */
+
 div{
-    color:red;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* psudo class */
+a:hover{
+    background: rgb(245, 147, 147);
+    font-size: 3rem;
+}
+
+li:first-child a{
+    color: yellow;
+}
+
+li:nth-child(2) a{
+    color: burlywood;
+}
+
+li:last-child a{
+    color:green;
 }
