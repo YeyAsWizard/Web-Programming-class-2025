@@ -1,0 +1,38 @@
+*{
+    color: white;
+    margin: 0;
+}
+
+div{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.box1{
+    position: fixed;
+    background: red;    
+}
+
+.box2{
+    position: fixed;
+    background: blue;
+    right: 0;
+    top: 0;
+}
+
+.box3{
+    position: fixed;
+    background: yellow;
+    bottom: 0;
+    left: 0;
+    color: black;
+}
+
+.box4{
+    position: fixed;
+    background: green;
+    bottom: 0;
+    right: 0;
+}
