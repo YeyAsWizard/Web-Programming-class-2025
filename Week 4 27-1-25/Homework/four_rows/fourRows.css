@@ -1,0 +1,136 @@
+* {
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  height: 100vh;
+}
+
+main{
+  height: 80vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: rgb(39, 165, 255);
+  height: 10vh;
+  width: auto;
+  img {
+    margin-left: 5px;
+    border: 3px solid black;
+    border-radius: 1em;
+    width: 3em;
+    height: 3em;
+    padding: 0.5em;
+    background-color: lightcoral;
+    margin: auto 0 auto 0.5em;
+    align-self: flex-start;
+  };
+}
+
+header nav{
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+
+header a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+header nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 8em;
+  height: 2em;
+  font-size: 2em;
+}
+
+header nav ul li{
+  width: fit-content;
+  list-style: none;
+}
+
+footer{
+  display: flex;
+  height: 10vh;
+}
+
+.help_align{
+  margin: auto 20px auto 0px;
+}
+
+.dot{
+  position: absolute;
+  margin-left: 75%;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+.row1{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  border: 5px solid red;
+  color: orange;
+}
+
+.div_row1{
+  width: 45rem;
+  height: 16rem;
+  background: lightblue;
+  text-align: center;
+  font-size: 50px;
+  line-height: 16rem;
+}
+
+.row2{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  border: 5px solid green;
+  color: orange;
+}
+
+.div_row2{
+  width: 30rem;
+  height: 16rem;
+  background: lightblue;
+  text-align: center;
+  font-size: 50px;
+  line-height: 38vh;
+}
+
+footer{
+  display: flex;
+  width: 100%;
+  background: rgb(112, 167, 255);
+}
+
+.footer1{
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  margin: 0.5rem;
+  align-self: flex-end;
+  font-size: 1.5rem;
+  color: white;
+}

@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid black; */
+}
+
+body{
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    height: 10vh;
+    img {
+        border-radius: 3em;
+        width: 2rem;
+        height: 2rem;
+      };
+}
+
+a{
+    text-decoration: none;
+    color: rgb(56, 55, 55);
+}
+
+header img:hover{
+    background: rgb(237, 237, 237);
+    transition: 0.2s;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-size: 12px;
+}
+
+header nav ul li{
+    width: fit-content;
+    list-style: none;
+    width: fit-content;
+    height: fit-content;
+    margin: 8px;
+}
+
+main{
+    height: 80vh;
+}
+
+
+
+footer{
+    height: 10vh;
+    background: rgb(242, 242, 242);
+}
+
+footer section{
+    height: 50%;
+    width: 100%;
+}
+
+.footer_text{
+    position: relative;
+    margin-left: 1em;
+    top: 0.5em;
+    font-size: 1.2em;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-size: 12px;
+    border-top: 1px solid gray;
+}
+
+footer nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-size: 12px;
+    
+}
+
+footer nav ul li{
+    width: fit-content;
+    list-style: none;
+    width: fit-content;
+    height: fit-content;
+    margin: 16px;
+}
+
+footer nav ul li:hover{
+    text-decoration: underline;
+}
+
+.menu_btn{
+    background: none;
+    border: 0;
+}
+
+.menu_btn_size{
+    width: 2em;
+    height: 2em;
+    padding: 4px;
+}
+
+.main_container{
+    position: relative;
+    margin: 0 auto;
+    width: 35%;
+    height: 66vh;
+}
+
+.search_box{
+    display: flex;
+    justify-content: center;
+    border: 1px solid lightgray;
+    align-items: center;
+    height: 2.5em;
+    box-shadow: 0px 0px 5px lightgray;
+    border-radius: 3em;
+}
+.img_size{
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+}
+input{
+    border: none;
+    width: 80%;
+    height: 100%;
+    padding-left: 1em;
+    font-size: 16px;
+}
+
+.logo_align{
+    display: block;
+    margin: 20% auto 10% auto;
+    width: 250px; 
+}
+
+.search_button{
+    display: flex;
+    justify-content: center;
+}
+
+.search_btn_style{
+    width: 140px;
+    height: 35px;
+    margin: 2em 0.5em 1em 0.5em;
+    border: none;
+    border-radius: 3px;
+    background: rgb(248, 249, 251);
+}
+
+
+.lang_link{
+    text-decoration: underline;
+    color: blue;
+}
+
+.align_center{
+    text-align: center;
+}
