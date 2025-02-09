@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    /* grid-template-rows: 10vh 80vh 10vh; */
+    text-align: center;
+    padding: 1em;
+}
+
+.item-1, .item-3{
+    border: 2px solid red;
+    padding: 0.3em;
+}
+.item-2{
+    border: 2px solid orange;
+    font-size: 2em;
+    min-height: 80vh;
+}

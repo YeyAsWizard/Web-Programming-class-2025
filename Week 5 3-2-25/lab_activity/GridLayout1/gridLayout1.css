@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid_container{
+    display: grid;
+    min-height: 100vh;
+    min-width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.grid_item{
+    border: 2px solid blue;
+}
+
+.item-1{
+    display: flex;
+    justify-content: space-between;
+    grid-column: span 2;
+}
+.item-2{
+    display: flex;
+    justify-content: space-between;
+    grid-row: span 2;
+    min-height: 80vh;
+}
+
+.item-5{
+    grid-column: span 2;
+    min-height: 10vh;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin: 1em;
+}
+
+.logo{
+    margin: 1em;
+}
