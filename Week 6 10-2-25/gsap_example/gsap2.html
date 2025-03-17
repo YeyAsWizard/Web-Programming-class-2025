@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stagger Example</title>
+    <link rel="stylesheet" href="gsap2.css">
+</head>
+<body>
+    <main>
+        <div class="windows">
+            <img src="./images/alvan-nee-ZCHj_2lJP00-unsplash.jpg" alt="">
+            <p>Cat 1</p>
+        </div>
+        <div class="windows">
+            <img src="./images/timo-volz-ZlFKIG6dApg-unsplash.jpg" alt="">
+            <p>Cat 2</p>
+        </div>
+        <div class="windows">
+            <img src="./images/jae-park-7GX5aICb5i4-unsplash.jpg" alt="">
+            <p>Cat 3</p>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        gsap.set('img', {yPercent: -120})
+        gsap.set('p', {opacity: 0})
+
+        gsap.to('img', {yPercent: 0,
+            stagger: 0.2,
+            duration: 1,
+            scale: 1.4,
+            ease: "power4.out",
+            delay: .5,
+            onComplete: scaleDownAndFadeIn,
+        })
+
+        function scaleDownAndFadeIn() {
+            gsap.to('img', {
+                scale: 1,
+                duration: 2
+            }) 
+            gsap.fromTo('p', {
+                y:-100,
+                letterSpacing: '0.7em'
+            }, {
+                opacity: 1,
+                y: 0,
+                letterSpacing: '0em',
+                stagger: .3,
+                duration: 2
+            })
+        }
+    </script>
+</body>
+</html>

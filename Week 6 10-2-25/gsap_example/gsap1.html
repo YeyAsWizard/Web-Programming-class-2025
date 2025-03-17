@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Gsap</title>
+    <link rel="stylesheet" href="gsap1.css" />
+  </head>
+  <body>
+    <main>
+      <h1>CoC</h1>
+      <div class="line"></div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      //   gsap.to("h1", {
+      //     duration: 2,
+      //     xPercent: 50,
+      //     yPercent: 100,
+      //     rotate: 360,
+      //     repeat: -1,
+      //   });
+        // gsap.from("h1", {
+        //   duration: 2,
+        //   xPercent: 50,
+        //   repeat: -1,
+        // });
+
+        gsap.from('.line',{
+            width: 0,
+            duration: 2,
+            // repeat: -1,
+        });
+
+        gsap.from('h1', {
+           duration: 2,
+           yPercent: -100,
+           delay: 0.2,
+           ease: 'elastic'
+        });
+
+        gsap.to('.line', {
+            height: "100%",
+            // width: "100%",
+            duration: 1,
+            delay: 2,
+            top: 0,
+            backgroundColor: "white",
+        })
+    </script>
+  </body>
+</html>
